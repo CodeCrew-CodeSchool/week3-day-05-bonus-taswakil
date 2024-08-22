@@ -49,48 +49,49 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); /* Center the button */
+        display: none;
     }
 </style>
 
 <body>
-    <div id='header'>
+    <div id="header">
         <h1>Aspen's Adventure Gallery</h1>
     </div>
-    <div id='content'>
+    <div id="content">
         <div id="mainDisplay">
             <img id="mainDisplayImage" src="assets/placeholder.png"/>
         </div>
         <h3>Select an image to view</h3>
-        <div id='thumbnailsContainer'>
-            <div id="thumbnail1" class='thumbnail'>
+        <div id="thumbnailsContainer">
+            <div id="thumbnail1" class="thumbnail">
                 <img src="assets/Aspen1.jpg" class="thumbnailImage">
                 <button id="thumbnail1Button">View</button>
             </div>
-            <div id="thumbnail2" class='thumbnail'>
+            <div id="thumbnail2" class="thumbnail">
                 <img src="assets/Aspen2.jpg" class="thumbnailImage">
                 <button id="thumbnail2Button">View</button>
             </div>
-            <div id="thumbnail3" class='thumbnail'>
+            <div id="thumbnail3" class="thumbnail">
                 <img src="assets/Aspen3.jpg" class="thumbnailImage">
                 <button id="thumbnail3Button">View</button>
             </div>
-            <div id="thumbnail4" class='thumbnail'>
+            <div id="thumbnail4" class="thumbnail">
                 <img src="assets/Aspen4.jpg" class="thumbnailImage">
                 <button id="thumbnail4Button">View</button>
             </div>
-            <div id="thumbnail5" class='thumbnail'>
+            <div id="thumbnail5" class="thumbnail">
                 <img src="assets/Aspen5.jpg" class="thumbnailImage">
                 <button id="thumbnail5Button">View</button>
             </div>
-            <div id="thumbnail6" class='thumbnail'>
+            <div id="thumbnail6" class="thumbnail">
                 <img src="assets/Aspen6.jpg" class="thumbnailImage">
                 <button id="thumbnail6Button">View</button>
             </div>
-            <div id="thumbnail7" class='thumbnail'>
+            <div id="thumbnail7" class="thumbnail">
                 <img src="assets/Aspen7.jpg" class="thumbnailImage">
                 <button id="thumbnail7Button">View</button>
             </div>
-            <div id="thumbnail8" class='thumbnail'>
+            <div id="thumbnail8" class="thumbnail">
                 <img src="assets/Aspen8.jpg" class="thumbnailImage">
                 <button id="thumbnail8Button">View</button>
             </div>
@@ -100,29 +101,167 @@
 
 <script>
 
-    // PART 1
-    let thumbnail1ButtonHTML = document.getElementById("thumbnail1Button")
-    thumbnail1ButtonHTML.addEventListener(function(){
+ // PART 1
+
+ let thumbnail1ButtonHTML = document.getElementById("thumbnail1Button")
+    thumbnail1ButtonHTML.addEventListener("click", function(){
         //*** YOUR JAVASCRIPT CODE HERE ***
+        let mainDisplayImageHTML = document.getElementById("mainDisplayImage")
+
+        mainDisplayImageHTML.src = "assets/Aspen1.jpg"
 
     })
+   
+
 
     let thumbnail2ButtonHTML = document.getElementById("thumbnail2Button")
-    thumbnail2ButtonHTML.addEventListener(function(){
+    thumbnail2ButtonHTML.addEventListener("click", function(){
         //*** YOUR JAVASCRIPT CODE HERE ***
+
+        //select the mainDisplayImage into a variable
+        let mainDisplayImageHTML = document.getElementById("mainDisplayImage")
+
+        //set the value of its src attribute to be equal to assets/Aspen2.jpg
+        mainDisplayImageHTML.src = "assets/Aspen2.jpg"
 
     })
 
     let thumbnail3ButtonHTML = document.getElementById("thumbnail3Button")
-    thumbnail3ButtonHTML.addEventListener(function(){
+    thumbnail3ButtonHTML.addEventListener("click", function(){
         //*** YOUR JAVASCRIPT CODE HERE ***
+
+        let mainDisplayImageHTML = document.getElementById("mainDisplayImage")
+        mainDisplayImageHTML.src = "assets/Aspen3.jpg"
+    })
+
+    let thumbnail4ButtonHTML = document.getElementById("thumbnail4Button")
+    thumbnail4ButtonHTML.addEventListener("click", function(){
+    
+     let mainDisplayImageHTML = document.getElementById("mainDisplayImage")
+     mainDisplayImageHTML.src = "assets/Aspen4.jpg"
+
+    })
+
+        let thumbnail5ButtonHTML = document.getElementById("thumbnail5Button")
+        thumbnail5ButtonHTML.addEventListener("click", function(){
+
+            let mainDisplayImageHTML = document.getElementById("mainDisplayImage")
+            mainDisplayImageHTML.src = "assets/Aspen5.jpg"
+        })
+
+
+    let thumbnail6ButtonHTML = document.getElementById("thumbnail6Button")
+    thumbnail6ButtonHTML.addEventListener("click", function(){
+
+        mainDisplayImageHTML.src = "assers/Aspen6.jpg"
+
+    })
+
+    let thumbnail7ButtonHTML = document.getElementById("thumbnail7Button")
+    thumbnail7ButtonHTML.addEventListener("click", function(){
+
+        let mainDisplayImageHTML = document.getElementById("mainDisplayImage")
+        mainDisplayImageHTML.src = "assets/Aspen7.jpg"
+
+    })
+
+    let thumbnail8ButtonHTML = document.getElementById("thumbnail8Button")
+    thumbnail8ButtonHTML.addEventListener("click", function(){
+
+        mainDisplayImageHTML.src = "assers/Aspen8.jpg"
 
     })
 
 
 
 
+                      <!-- hover effect -->
 
+
+    let thumbnail1HTML = document.getElementById("thumbnail1")
+    thumbnail1HTML.addEventListener("mouseenter", function(){
+
+        thumbnail1ButtonHTML.style.display = "block"
+    })
+    thumbnail1HTML.addEventListener("mouseleave", function(){
+        thumbnail1ButtonHTML.style.display = "none"
+    })
+
+
+    let thumbnail2HTML = document.getElementById("thumbnail2")
+    thumbnail2HTML.addEventListener("mouseenter", function(){
+
+        thumbnail2ButtonHTML.style.display = "block"
+    })
+    thumbnail2HTML.addEventListener("mouseleave", function(){
+        thumbnail2ButtonHTML.style.display = "none"
+    })
+    
+
+    let thumbnail3HTML = document.getElementById("thumbnail3")
+    thumbnail3HTML.addEventListener("mouseenter", function(){
+
+        thumbnail3ButtonHTML.style.display = "block"
+    })
+    thumbnail3HTML.addEventListener("mouseleave", function(){
+        thumbnail3ButtonHTML.style.display = "none"
+    })
+
+
+
+    let thumbnail4HTML = document.getElementById("thumbnail4")
+    thumbnail4HTML.addEventListener("mouseenter", function(){
+
+        thumbnail4ButtonHTML.style.display = "block"
+    })
+    thumbnail4HTML.addEventListener("mouseleave", function(){
+        thumbnail4ButtonHTML.style.display = "none"
+    })
+
+
+
+    let thumbnail5HTML = document.getElementById("thumbnail5")
+    thumbnail5HTML.addEventListener("mouseenter", function(){
+
+        thumbnail5ButtonHTML.style.display = "block"
+    })
+    thumbnail5HTML.addEventListener("mouseleave", function(){
+        thumbnail5ButtonHTML.style.display = "none"
+    })
+
+
+
+    let thumbnail6HTML = document.getElementById("thumbnail6")
+    thumbnail6HTML.addEventListener("mouseenter", function(){
+
+        thumbnail6ButtonHTML.style.display = "block"
+    })
+    thumbnail6HTML.addEventListener("mouseleave", function(){
+        thumbnail6ButtonHTML.style.display = "none"
+    })
+
+
+
+    let thumbnail7HTML = document.getElementById("thumbnail7")
+    thumbnail7HTML.addEventListener("mouseenter", function(){
+
+        thumbnail7ButtonHTML.style.display = "block"
+    })
+    thumbnail7HTML.addEventListener("mouseleave", function(){
+        thumbnail7ButtonHTML.style.display = "none"
+    })
+
+
+    let thumbnail8HTML = document.getElementById("thumbnail8")
+    thumbnail8HTML.addEventListener("mouseenter", function(){
+
+        thumbnail8ButtonHTML.style.display = "block"
+    })
+    thumbnail8HTML.addEventListener("mouseleave", function(){
+        thumbnail8ButtonHTML.style.display = "none"
+    })
+
+    
 
 
 
