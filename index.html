@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+    #header {
+        display: flex;
+        justify-content: center;
+    }
+    #content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #mainDisplay{
+
+        margin-top: 3%;
+    }
+
+    #mainDisplay img {
+        width: 50vh;
+        border: 3px solid black;
+
+    }
+
+
+    #thumbnailsContainer {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        /* margin-top: 5%; */
+    }
+    .thumbnail {
+        position: relative; /* Set position context for absolute positioning of the button */
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: gray;
+        border: 3px solid black;
+    }
+    .thumbnail img {
+        margin: 0;
+        width: 10vh;
+        object-fit: cover; /* This will make sure to cover the area without stretching the image */
+    }
+    .thumbnail button {
+        position: absolute; /* Position the button over the image */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center the button */
+    }
+</style>
+
+<body>
+    <div id='header'>
+        <h1>Aspen's Adventure Gallery</h1>
+    </div>
+    <div id='content'>
+        <div id="mainDisplay">
+            <img id="mainDisplayImage" src="assets/placeholder.png"/>
+        </div>
+        <h3>Select an image to view</h3>
+        <div id='thumbnailsContainer'>
+            <div id="thumbnail1" class='thumbnail'>
+                <img src="assets/Aspen1.jpg" class="thumbnailImage">
+                <button id="thumbnail1Button">View</button>
+            </div>
+            <div id="thumbnail2" class='thumbnail'>
+                <img src="assets/Aspen2.jpg" class="thumbnailImage">
+                <button id="thumbnail2Button">View</button>
+            </div>
+            <div id="thumbnail3" class='thumbnail'>
+                <img src="assets/Aspen3.jpg" class="thumbnailImage">
+                <button id="thumbnail3Button">View</button>
+            </div>
+            <div id="thumbnail4" class='thumbnail'>
+                <img src="assets/Aspen4.jpg" class="thumbnailImage">
+                <button id="thumbnail4Button">View</button>
+            </div>
+            <div id="thumbnail5" class='thumbnail'>
+                <img src="assets/Aspen5.jpg" class="thumbnailImage">
+                <button id="thumbnail5Button">View</button>
+            </div>
+            <div id="thumbnail6" class='thumbnail'>
+                <img src="assets/Aspen6.jpg" class="thumbnailImage">
+                <button id="thumbnail6Button">View</button>
+            </div>
+            <div id="thumbnail7" class='thumbnail'>
+                <img src="assets/Aspen7.jpg" class="thumbnailImage">
+                <button id="thumbnail7Button">View</button>
+            </div>
+            <div id="thumbnail8" class='thumbnail'>
+                <img src="assets/Aspen8.jpg" class="thumbnailImage">
+                <button id="thumbnail8Button">View</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    // PART 1
+    let thumbnail1ButtonHTML = document.getElementById("thumbnail1Button")
+    thumbnail1ButtonHTML.addEventListener(function(){
+        //*** YOUR JAVASCRIPT CODE HERE ***
+
+    })
+
+    let thumbnail2ButtonHTML = document.getElementById("thumbnail2Button")
+    thumbnail2ButtonHTML.addEventListener(function(){
+        //*** YOUR JAVASCRIPT CODE HERE ***
+
+    })
+
+    let thumbnail3ButtonHTML = document.getElementById("thumbnail3Button")
+    thumbnail3ButtonHTML.addEventListener(function(){
+        //*** YOUR JAVASCRIPT CODE HERE ***
+
+    })
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>
